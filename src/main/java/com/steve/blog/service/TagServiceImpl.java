@@ -9,22 +9,28 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
 public class TagServiceImpl implements TagService {
     @Autowired
     private TagRepository tagRepository;
+
+    @Transactional
     @Override
     public Tag saveTag(Tag tag) {
         return tagRepository.save(tag);
     }
 
+    @Transactional
     @Override
     public void deleteTag(Long id) {
         tagRepository.deleteById(id);
     }
 
+    @Transactional
     @Override
     public Tag updateTag(Long id, Tag tag) {
         Tag t = tagRepository.getOne(id);
@@ -35,18 +41,44 @@ public class TagServiceImpl implements TagService {
         return tagRepository.save(t);
     }
 
+    @Transactional
     @Override
     public Tag getTagById(Long id) {
         return tagRepository.getOne(id);
     }
 
+    @Transactional
     @Override
     public Tag getTagByName(String name) {
         return tagRepository.findByName(name);
     }
 
+    @Transactional
     @Override
     public Page<Tag> listTags(Pageable pageable) {
         return tagRepository.findAll(pageable);
+    }
+
+    @Transactional
+    @Override
+    public List<Tag> listTag() {
+        return tagRepository.findAll();
+    }
+
+    @Transactional
+    @Override
+    public List<Tag> listTag(String ids) {
+        return tagRepository.findAllById(convertToList(ids));
+    }
+
+    private List<Long> convertToList(String ids) {
+        List<Long> list = new ArrayList<>();
+        if (!"".equals(ids) && ids != null) {
+            String[] idarray = ids.split(",");
+            for (int i=0; i < idarray.length;i++) {
+                list.add(new Long(idarray[i]));
+            }
+        }
+        return list;
     }
 }

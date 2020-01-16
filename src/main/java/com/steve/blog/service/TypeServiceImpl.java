@@ -10,6 +10,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.List;
 
 @Service
 public class TypeServiceImpl implements TypeService {
@@ -29,16 +30,25 @@ public class TypeServiceImpl implements TypeService {
         return typeRepository.getOne(id);
     }
 
+    @Transactional
     @Override
     public Type getTypeByName(String name) {
         return typeRepository.findByName(name);
     }
 
+    @Transactional
     @Override
     public Page<Type> listType(Pageable pageable) {
         return typeRepository.findAll(pageable);
     }
 
+    @Transactional
+    @Override
+    public List<Type> listType() {
+        return typeRepository.findAll();
+    }
+
+    @Transactional
     @Override
     public Type updateType(Long id, Type type) {
         Type t = typeRepository.getOne(id);
@@ -49,6 +59,7 @@ public class TypeServiceImpl implements TypeService {
         return typeRepository.save(t);
     }
 
+    @Transactional
     @Override
     public void deleteType(Long id) {
         typeRepository.deleteById(id);
