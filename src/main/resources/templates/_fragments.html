@@ -26,10 +26,16 @@
             <a href="#" class="item m-mobile-hide m-item" th:classappend="${n==4}?'active'"><i class="clone icon"></i>归档</a>
             <a href="#" class="item m-mobile-hide m-item" th:classappend="${n==5}?'active'"><i class="info icon"></i>关于我</a>
             <div class="right item m-mobile-hide m-item">
-                <div class="ui icon transparent inverted input">
-                    <input type="text" placeholder="search....">
-                    <i class="search link icon"></i>
-                </div>
+                <form name="search" action="#" th:action="@{/search}" method="post" target="_blank">
+                    <div class="ui icon inverted transparent input m-margin-tb-tiny">
+                        <input type="text" name="query" placeholder="Search...." th:value="${query}">
+                        <i onclick="document.forms['search'].submit()" class="search link icon"></i>
+                    </div>
+                </form>
+                <!--<div class="ui icon transparent inverted input">-->
+                    <!--<input type="text" placeholder="search....">-->
+                    <!--<i class="search link icon"></i>-->
+                <!--</div>-->
             </div>
         </div>
     </div>
