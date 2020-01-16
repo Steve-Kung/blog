@@ -113,9 +113,11 @@ public class BlogController {
         // 上面为查询数据库中不含有的标签
 
         blog.setTags(tagService.listTag(blog.getTagIds()));
+
         Blog b;
+
         if (blog.getId() == 0) {
-            b =  blogService.saveBlog(blog);
+            b = blogService.saveBlog(blog);
         } else {
             b = blogService.updateBlog(blog.getId(), blog);
         }

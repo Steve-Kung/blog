@@ -25,6 +25,7 @@ public class Blog {
     private boolean commentabled;
     private boolean published;
     private boolean recommend;
+    private String description;
 
     @Temporal(TemporalType.TIMESTAMP)
     private Date createTime;
@@ -192,6 +193,14 @@ public class Blog {
         this.tagIds = tagIds;
     }
 
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
     public void init() {
         this.tagIds = tagsToIds(this.getTags());
     }
@@ -230,6 +239,7 @@ public class Blog {
                 ", recommend=" + recommend +
                 ", createTime=" + createTime +
                 ", updateTime=" + updateTime +
+                ", description=" + description +
                 '}';
     }
 }
