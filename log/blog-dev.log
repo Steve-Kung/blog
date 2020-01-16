@@ -1900,3 +1900,122 @@ java.io.IOException: Unfinished block structure <!--/*...*/-->
 2020-01-16 21:19:37.228  INFO 93988 --- [http-nio-8080-exec-9] com.steve.blog.aspect.LogAspect          : Result: index
 2020-01-16 21:19:46.275  INFO 93988 --- [http-nio-8080-exec-9] com.steve.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/search', ip='0:0:0:0:0:0:0:1', classMethod='com.steve.blog.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], asd, {}]}
 2020-01-16 21:19:46.289  INFO 93988 --- [http-nio-8080-exec-9] com.steve.blog.aspect.LogAspect          : Result: search
+2020-01-16 21:22:09.155  INFO 100344 --- [restartedMain] com.steve.blog.BlogApplication           : Starting BlogApplication on CLY with PID 100344 (E:\project\blog\target\classes started by Administrator in E:\project\blog)
+2020-01-16 21:22:09.157 DEBUG 100344 --- [restartedMain] com.steve.blog.BlogApplication           : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-01-16 21:22:09.157  INFO 100344 --- [restartedMain] com.steve.blog.BlogApplication           : The following profiles are active: dev
+2020-01-16 21:22:09.191  INFO 100344 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\maven\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-01-16 21:22:09.192  INFO 100344 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-01-16 21:22:09.192  INFO 100344 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-01-16 21:22:09.701  INFO 100344 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-16 21:22:09.770  INFO 100344 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61ms. Found 4 JPA repository interfaces.
+2020-01-16 21:22:10.051  INFO 100344 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 21:22:10.479  INFO 100344 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-01-16 21:22:10.486  INFO 100344 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-16 21:22:10.486  INFO 100344 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-16 21:22:10.567  INFO 100344 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-16 21:22:10.567  INFO 100344 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1375 ms
+2020-01-16 21:22:10.721  INFO 100344 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-16 21:22:10.773  INFO 100344 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2020-01-16 21:22:10.866  INFO 100344 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-16 21:22:10.944  INFO 100344 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-01-16 21:22:11.057  INFO 100344 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-01-16 21:22:11.066  INFO 100344 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-01-16 21:22:11.738  INFO 100344 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-16 21:22:11.746  INFO 100344 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-16 21:22:11.770  INFO 100344 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-01-16 21:22:12.523  WARN 100344 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-16 21:22:12.717  INFO 100344 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-16 21:22:12.808  INFO 100344 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-01-16 21:22:13.135  INFO 100344 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-16 21:22:13.137  INFO 100344 --- [restartedMain] com.steve.blog.BlogApplication           : Started BlogApplication in 4.517 seconds (JVM running for 5.151)
+2020-01-16 21:22:15.697  INFO 100344 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-16 21:22:15.697  INFO 100344 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-16 21:22:15.711  INFO 100344 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-01-16 21:22:15.736  INFO 100344 --- [http-nio-8080-exec-1] com.steve.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/blog/44', ip='0:0:0:0:0:0:0:1', classMethod='com.steve.blog.web.IndexController.blog', args=[]}
+2020-01-16 21:22:15.741  INFO 100344 --- [http-nio-8080-exec-1] com.steve.blog.aspect.LogAspect          : Result: blog
+2020-01-16 21:22:31.963  INFO 100344 --- [http-nio-8080-exec-2] com.steve.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/blog/41', ip='0:0:0:0:0:0:0:1', classMethod='com.steve.blog.web.IndexController.blog', args=[]}
+2020-01-16 21:22:31.963  INFO 100344 --- [http-nio-8080-exec-2] com.steve.blog.aspect.LogAspect          : Result: blog
+2020-01-16 21:39:34.267  INFO 100344 --- [http-nio-8080-exec-7] com.steve.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/blog/41', ip='0:0:0:0:0:0:0:1', classMethod='com.steve.blog.web.IndexController.blog', args=[]}
+2020-01-16 21:39:34.268  INFO 100344 --- [http-nio-8080-exec-7] com.steve.blog.aspect.LogAspect          : Result: blog
+2020-01-16 21:39:57.682  INFO 100344 --- [http-nio-8080-exec-3] com.steve.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/blog/41', ip='0:0:0:0:0:0:0:1', classMethod='com.steve.blog.web.IndexController.blog', args=[]}
+2020-01-16 21:39:57.682  INFO 100344 --- [http-nio-8080-exec-3] com.steve.blog.aspect.LogAspect          : Result: blog
+2020-01-16 21:41:25.500  INFO 100344 --- [http-nio-8080-exec-9] com.steve.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/blog/41', ip='0:0:0:0:0:0:0:1', classMethod='com.steve.blog.web.IndexController.blog', args=[]}
+2020-01-16 21:41:25.500  INFO 100344 --- [http-nio-8080-exec-9] com.steve.blog.aspect.LogAspect          : Result: blog
+2020-01-16 21:47:28.541  INFO 100036 --- [restartedMain] com.steve.blog.BlogApplication           : Starting BlogApplication on CLY with PID 100036 (E:\project\blog\target\classes started by Administrator in E:\project\blog)
+2020-01-16 21:47:28.543 DEBUG 100036 --- [restartedMain] com.steve.blog.BlogApplication           : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-01-16 21:47:28.543  INFO 100036 --- [restartedMain] com.steve.blog.BlogApplication           : The following profiles are active: dev
+2020-01-16 21:47:28.582  INFO 100036 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\maven\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-01-16 21:47:28.582  INFO 100036 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-01-16 21:47:28.582  INFO 100036 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-01-16 21:47:29.159  INFO 100036 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-16 21:47:29.227  INFO 100036 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60ms. Found 4 JPA repository interfaces.
+2020-01-16 21:47:29.493  INFO 100036 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 21:47:29.965  INFO 100036 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-01-16 21:47:29.974  INFO 100036 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-16 21:47:29.975  INFO 100036 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-16 21:47:30.071  INFO 100036 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-16 21:47:30.071  INFO 100036 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1489 ms
+2020-01-16 21:47:30.224  INFO 100036 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-16 21:47:30.273  INFO 100036 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2020-01-16 21:47:30.361  INFO 100036 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-16 21:47:30.430  INFO 100036 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-01-16 21:47:30.525  INFO 100036 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-01-16 21:47:30.534  INFO 100036 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-01-16 21:47:31.244  INFO 100036 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-16 21:47:31.249  INFO 100036 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-16 21:47:31.273  INFO 100036 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-01-16 21:47:31.944  WARN 100036 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-16 21:47:32.128  INFO 100036 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-16 21:47:32.220  INFO 100036 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-01-16 21:47:32.580  INFO 100036 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-16 21:47:32.582  INFO 100036 --- [restartedMain] com.steve.blog.BlogApplication           : Started BlogApplication in 4.521 seconds (JVM running for 5.14)
+2020-01-16 21:47:42.634  INFO 100036 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-16 21:47:42.635  INFO 100036 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-16 21:47:42.647  INFO 100036 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-01-16 21:47:42.717  INFO 100036 --- [http-nio-8080-exec-1] com.steve.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.steve.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-01-16 21:47:42.850  WARN 100036 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-01-16 21:47:42.864  WARN 100036 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-01-16 21:47:42.869  INFO 100036 --- [http-nio-8080-exec-1] com.steve.blog.aspect.LogAspect          : Result: index
+2020-01-16 21:47:53.232  INFO 100036 --- [http-nio-8080-exec-1] com.steve.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/blog/39', ip='0:0:0:0:0:0:0:1', classMethod='com.steve.blog.web.IndexController.blog', args=[39, {}]}
+2020-01-16 21:47:53.248  INFO 100036 --- [http-nio-8080-exec-1] com.steve.blog.aspect.LogAspect          : Result: blog
+2020-01-16 22:05:16.243  INFO 99936 --- [restartedMain] com.steve.blog.BlogApplication           : Starting BlogApplication on CLY with PID 99936 (E:\project\blog\target\classes started by Administrator in E:\project\blog)
+2020-01-16 22:05:16.246 DEBUG 99936 --- [restartedMain] com.steve.blog.BlogApplication           : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-01-16 22:05:16.246  INFO 99936 --- [restartedMain] com.steve.blog.BlogApplication           : The following profiles are active: dev
+2020-01-16 22:05:16.289  INFO 99936 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\maven\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/maven/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-01-16 22:05:16.290  INFO 99936 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-01-16 22:05:16.290  INFO 99936 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-01-16 22:05:16.990  INFO 99936 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-16 22:05:17.093  INFO 99936 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94ms. Found 4 JPA repository interfaces.
+2020-01-16 22:05:17.452  INFO 99936 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 22:05:18.029  INFO 99936 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-01-16 22:05:18.039  INFO 99936 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-16 22:05:18.039  INFO 99936 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-16 22:05:18.138  INFO 99936 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-16 22:05:18.138  INFO 99936 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1848 ms
+2020-01-16 22:05:18.359  INFO 99936 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-16 22:05:18.429  INFO 99936 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2020-01-16 22:05:18.535  INFO 99936 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-16 22:05:18.623  INFO 99936 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-01-16 22:05:18.731  INFO 99936 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-01-16 22:05:18.742  INFO 99936 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-01-16 22:05:19.628  INFO 99936 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-16 22:05:19.633  INFO 99936 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-16 22:05:19.663  INFO 99936 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-01-16 22:05:20.555  WARN 99936 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-16 22:05:20.790  INFO 99936 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-16 22:05:20.908  INFO 99936 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-01-16 22:05:21.312  INFO 99936 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-16 22:05:21.314  INFO 99936 --- [restartedMain] com.steve.blog.BlogApplication           : Started BlogApplication in 5.762 seconds (JVM running for 6.578)
+2020-01-16 22:05:43.747  INFO 99936 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-16 22:05:43.747  INFO 99936 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-16 22:05:43.763  INFO 99936 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-01-16 22:05:43.803  INFO 99936 --- [http-nio-8080-exec-1] com.steve.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/blog/44', ip='0:0:0:0:0:0:0:1', classMethod='com.steve.blog.web.IndexController.blog', args=[44, {}]}
+2020-01-16 22:05:43.917  INFO 99936 --- [http-nio-8080-exec-1] com.steve.blog.aspect.LogAspect          : Result: blog
+2020-01-16 22:05:54.538  INFO 99936 --- [http-nio-8080-exec-2] com.steve.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/blog/39', ip='0:0:0:0:0:0:0:1', classMethod='com.steve.blog.web.IndexController.blog', args=[39, {}]}
+2020-01-16 22:05:54.551  INFO 99936 --- [http-nio-8080-exec-2] com.steve.blog.aspect.LogAspect          : Result: blog
+2020-01-16 22:06:17.210  INFO 99936 --- [http-nio-8080-exec-2] com.steve.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/blog/44', ip='0:0:0:0:0:0:0:1', classMethod='com.steve.blog.web.IndexController.blog', args=[44, {}]}
+2020-01-16 22:06:17.213  INFO 99936 --- [http-nio-8080-exec-2] com.steve.blog.aspect.LogAspect          : Result: blog
+2020-01-16 22:06:25.145  INFO 99936 --- [http-nio-8080-exec-6] com.steve.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.steve.blog.web.IndexController.blog', args=[35, {}]}
+2020-01-16 22:06:25.152  INFO 99936 --- [http-nio-8080-exec-6] com.steve.blog.aspect.LogAspect          : Result: blog
+2020-01-16 22:16:06.584  INFO 99936 --- [http-nio-8080-exec-4] com.steve.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/blog/35', ip='0:0:0:0:0:0:0:1', classMethod='com.steve.blog.web.IndexController.blog', args=[35, {}]}
+2020-01-16 22:16:06.591  INFO 99936 --- [http-nio-8080-exec-4] com.steve.blog.aspect.LogAspect          : Result: blog

@@ -9,6 +9,7 @@ import java.util.List;
 
 public interface BlogService {
     Blog getBlog(Long id);
+    Blog getAndConvert(Long id);
     Blog saveBlog(Blog blog);
     void deleteBlog(Long id);
     Blog updateBlog(Long id, Blog blog);
