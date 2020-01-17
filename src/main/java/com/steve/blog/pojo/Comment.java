@@ -26,6 +26,8 @@ public class Comment {
     @OneToMany(mappedBy = "parentComment")
     private List<Comment> replyComments;
 
+    private boolean adminComment;
+
     public Comment() {
     }
 
@@ -101,6 +103,14 @@ public class Comment {
         this.replyComments = replyComments;
     }
 
+    public boolean isAdminComment() {
+        return adminComment;
+    }
+
+    public void setAdminComment(boolean adminComment) {
+        this.adminComment = adminComment;
+    }
+
     @Override
     public String toString() {
         return "Comment{" +
@@ -110,6 +120,10 @@ public class Comment {
                 ", content='" + content + '\'' +
                 ", avatar='" + avatar + '\'' +
                 ", createTime=" + createTime +
+                ", blog=" + blog +
+                ", parentComment=" + parentComment +
+                ", replyComments=" + replyComments +
+                ", adminComment=" + adminComment +
                 '}';
     }
 }

@@ -1,7 +1,9 @@
 body{
     background: url("../images/bg.png");
 }
-
+.m-teal {
+    color: #00B5AD !important;
+}
 .m-padded-mini{
     padding: 0.2em !important;
 }
