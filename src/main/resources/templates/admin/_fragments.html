@@ -43,43 +43,47 @@
     </a>
 </nav>
 
-<footer th:fragment="footer" class="ui inverted segment vertical m-padded-tb-massive">
+<footer th:fragment="footer" class="ui inverted vertical m-padded-tb-massive segment">
     <div class="ui center aligned container">
         <div class="ui inverted divided grid stackable">
             <div class="three wide column">
                 <div class="ui inverted link list">
                     <div class="item">
-                        <img src="../static/images/wechat.jpg" th:src="@{/images/wechat.jpg}" alt="" class="ui rounded image" style="width: 110px">
+                        <img src="../../static/images/wechat.jpg" th:src="@{/images/wechat.jpg}" alt="" class="ui rounded image" style="width: 110px">
                     </div>
                 </div>
 
             </div>
             <div class="three wide column">
                 <h4 class="ui inverted header m-text-spaced m-opacity-mini">最新博客</h4>
-                <div class="ui inverted link list">
-                    <a href="#" class="item">用户故事（User Story）</a>
-                    <a href="#" class="item">用户故事（User Story）</a>
-                    <a href="#" class="item">用户故事（User Story）</a>
+                <div id="newblog-container">
+                    <div class="ui inverted link list" th:fragment="newblogList">
+                        <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="item m-text-thin" th:each="blog : ${newblogs}" th:text="${blog.title}">用户故事（User Story）</a>
+                        <!--/*-->
+                        <a href="#" class="item m-text-thin">用户故事（User Story）</a>
+                        <a href="#" class="item m-text-thin">用户故事（User Story）</a>
+                        <!--*/-->
+                    </div>
                 </div>
             </div>
 
             <div class="three wide column">
                 <h4 class="ui inverted header m-text-spaced m-opacity-mini">联系我</h4>
                 <div class="ui inverted link list">
-                    <a href="#" class="item">email</a>
-                    <a href="#" class="item">qq</a>
-                    <a href="#" class="item">wechat</a>
+                    <a href="#" class="item m-text-thin" th:text="#{index.email}">Email: stevekung98@163.com</a>
+                    <a href="#" class="item m-text-thin" th:text="#{index.qq}">QQ: 21825018</a>
                 </div>
             </div>
 
             <div class="seven wide column">
                 <h4 class="ui inverted header m-text-spaced m-opacity-mini">Steve</h4>
-                <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客，这是我的个人博客，这是我的个人博客，
-                    这是我的个人博客，这是我的个人博客，这是我的个人博客</p>
+                <p class="m-text-thin m-text-spaced m-opacity-mini" th:text="#{index.blogDescription}">
+                    欢迎来到我的个人博客世界，我会分享关于编程、写作、思考相关的任何内容，希望你能喜欢...
+                </p>
             </div>
         </div>
         <div class="ui inverted section divider"></div>
-        <p class="m-text-thin m-text-spaced m-opacity-tiny">copy right</p>
+        <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2020 - <span th:text="${#dates.year(#dates.createNow())}">2021</span> steve Designed by steve</p>
     </div>
 </footer>
 
@@ -92,6 +96,9 @@
     <!--<script src="../../static/lib/tocbot/tocbot.min.js" th:src="@{/lib/tocbot/tocbot.min.js}"></script>-->
     <!--<script src="../../static/lib/qrcode/qrcode.min.js" th:src="@{/lib/qrcode/qrcode.min.js}"></script>-->
     <!--<script src="../../static/lib/waypoints/jquery.waypoints.min.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>-->
+    <script>
+        $('#newblog-container').load(/*[[@{/footer/newblog}]]*/"/footer/newblog");
+    </script>
 </th:block>
 
 </body>
