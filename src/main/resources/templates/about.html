@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="_fragments::head(~{::title})">
     <meta charset="UTF-8">
     <!--方便移动端浏览-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
 </head>
 <body>
     <!--导航-->
-    <nav class="ui inverted segment attached m-padded-tb-mini m-shadow-small">
+    <nav th:replace="_fragments::menu(5)" class="ui inverted segment attached m-padded-tb-mini m-shadow-small">
         <div class="ui container">
             <div class="ui inverted secondary menu stackable">
                 <h2 class="ui header teal item">Blog</h2>
@@ -21,7 +21,7 @@
                 <a href="#" class="item m-mobile-hide m-item"><i class="idea icon mini"></i>分类</a>
                 <a href="#" class="item m-mobile-hide m-item"><i class="tags icon mini"></i>标签</a>
                 <a href="#" class="item m-mobile-hide m-item"><i class="clone icon mini"></i>归档</a>
-                <a href="#" class="item m-mobile-hide m-item active"><i class="info icon mini"></i>关于我</a>
+                <a href="#" class="item m-mobile-hide m-item"><i class="info icon mini"></i>关于我</a>
                 <div class="right item m-mobile-hide m-item">
                     <div class="ui icon transparent inverted input">
                         <input type="text" placeholder="search....">
@@ -81,9 +81,18 @@
             </div>
         </div>
     </div>
-
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <!--底部footer-->
-    <footer class="ui inverted segment vertical m-padded-tb-massive">
+    <footer th:replace="_fragments::footer" class="ui inverted segment vertical m-padded-tb-massive">
         <div class="ui center aligned container">
             <div class="ui inverted divided grid stackable">
                 <div class="three wide column">
@@ -123,8 +132,10 @@
         </div>
     </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
+    <!--/*/<th:block th:replace="_fragments::script">/*/-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
+    <!--/*/</th:block>/*/-->
 
     <script>
         $('.menu.toggle').click(function () {
