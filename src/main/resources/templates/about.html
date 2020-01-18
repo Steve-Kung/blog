@@ -70,12 +70,12 @@
                         <div class="ui label teal basic left pointing m-margin-tb-tiny">...</div>
                     </div>
                     <div class="ui bottom attached segment">
-                        <a href="#" class="ui circular icon button"><i class="github icon"></i></a>
+                        <a href="#" class="ui circular icon button github" data-content="https://github.com/Steve-Kung" data-position="bottom center"><i class="github icon"></i></a>
                         <a href="#" class="ui circular icon button wechat"><i class="weixin icon"></i></a>
-                        <a href="#" class="ui circular icon button qq" data-content="21825018" data-position="bottom center"><i class="qq icon"></i></a>
+                        <a href="#" class="ui circular icon button qq" data-content="qq: 21825018" data-position="bottom center"><i class="qq icon"></i></a>
                     </div>
                     <div class="ui flowing popup transition hidden wechat-qr">
-                        <img src="../static/images/1.PNG" alt="" class="ui rounded images" style="width: 100px">
+                        <img src="../static/images/wechat.jpg" th:src="@{/images/wechat.jpg}" alt="" class="ui rounded images" style="width: 100px">
                     </div>
                 </div>
             </div>
@@ -142,6 +142,7 @@
             $('.m-item').toggleClass('m-mobile-hide');
         });
         $('.qq').popup();
+        $('.github').popup();
         $('.wechat').popup({
             popup : $('.wechat-qr'),
             on : 'hover',

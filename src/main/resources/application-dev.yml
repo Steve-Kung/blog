@@ -14,3 +14,5 @@ logging:
     root: info
     com.steve: debug
   file: log/blog-dev.log
+server:
+  port: 80

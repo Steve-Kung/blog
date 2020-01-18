@@ -21,6 +21,8 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 //	}
 //}
 
+
+
 @SpringBootApplication
 public class BlogApplication {
 
