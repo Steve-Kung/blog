@@ -525,3 +525,25 @@ Caused by: java.lang.ClassNotFoundException: javax.servlet.http.HttpServletReque
 2020-01-18 21:13:45.516  INFO 98160 --- [http-nio-80-exec-4] com.steve.blog.aspect.LogAspect          : Result: index
 2020-01-18 21:13:46.020  INFO 98160 --- [http-nio-80-exec-2] com.steve.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.steve.blog.web.IndexController.newblogs', args=[{}]}
 2020-01-18 21:13:46.026  INFO 98160 --- [http-nio-80-exec-2] com.steve.blog.aspect.LogAspect          : Result: _fragments :: newblogList
+2020-01-18 21:16:14.250  INFO 93472 --- [main] com.steve.blog.BlogApplicationTests      : Starting BlogApplicationTests on CLY with PID 93472 (started by Administrator in E:\project\blog)
+2020-01-18 21:16:14.250 DEBUG 93472 --- [main] com.steve.blog.BlogApplicationTests      : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-01-18 21:16:14.251  INFO 93472 --- [main] com.steve.blog.BlogApplicationTests      : The following profiles are active: dev
+2020-01-18 21:16:14.899  INFO 93472 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-18 21:16:14.974  INFO 93472 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67ms. Found 5 JPA repository interfaces.
+2020-01-18 21:16:15.379  INFO 93472 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-18 21:16:15.797  INFO 93472 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-18 21:16:15.870  INFO 93472 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2020-01-18 21:16:16.042  INFO 93472 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-18 21:16:16.215  INFO 93472 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-01-18 21:16:16.348  INFO 93472 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-01-18 21:16:16.372  INFO 93472 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-01-18 21:16:17.294  INFO 93472 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-18 21:16:17.300  INFO 93472 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-18 21:16:18.496  WARN 93472 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-18 21:16:18.889  INFO 93472 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-18 21:16:19.055  INFO 93472 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-01-18 21:16:19.429  INFO 93472 --- [main] com.steve.blog.BlogApplicationTests      : Started BlogApplicationTests in 5.624 seconds (JVM running for 6.658)
+2020-01-18 21:16:19.626  INFO 93472 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-18 21:16:19.628  INFO 93472 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-01-18 21:16:19.629  INFO 93472 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-01-18 21:16:19.656  INFO 93472 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
