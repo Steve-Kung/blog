@@ -37,7 +37,7 @@ public class BlogController {
     private TagService tagService;
 
     @GetMapping("/blogs")
-    public String blogs(@PageableDefault(size = 2, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
+    public String blogs(@PageableDefault(size = 10, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
                         Model model, BlogQuery blog){
         model.addAttribute("types", typeService.listType());
         Page<Blog> page = blogService.listBlogs(pageable, blog);
@@ -45,7 +45,7 @@ public class BlogController {
         return LIST;
     }
     @PostMapping("/blogs/search") // BlogQuery
-    public String search(@PageableDefault(size = 2, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
+    public String search(@PageableDefault(size = 10, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
                          BlogQuery blog, Model model) {
         model.addAttribute("page", blogService.listBlogs(pageable, blog));
         return "admin/blogs :: blogList"; // 返回片段
